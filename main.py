@@ -74,6 +74,10 @@ df.drop(columns = ['Netflix','Disney+','Hulu','Prime Video'], inplace = True)
 #Verificamos
 df
 
+#Cambiamos el tipo de dato de Rotten Tomatoes
+df["Rotten Tomatoes"] = df["Rotten Tomatoes"].astype(np.int64)
+
+
 
 #No usar
 """ #Determinamos las variables numericas mediantes estadisticas
