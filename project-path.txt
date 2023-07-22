@@ -48,4 +48,5 @@ y utilizaré Tableau para crear visualizaciones interactivas y atractivas que re
 
 
 ----------------------------------------------------------------------------------------------------------------------------------------------
-En este proyecto, pondré especial atención al detalle en cada paso, interpretaré los datos correctamente y presentaré los resultados de manera clara y efectiva. ¡Espero que este proyecto de Análisis y Visualización de Datos de Películas sea exitoso y enriquecedor!
+En este proyecto, pondré especial atención al detalle en cada paso, interpretaré los datos correctamente y presentaré los resultados de manera clara y efectiva. 
+¡Espero que este proyecto de Análisis y Visualización de Datos de Películas sea exitoso y enriquecedor!
