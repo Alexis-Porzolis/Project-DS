@@ -48,6 +48,18 @@ df["Age"] = df["Age"].fillna(df["Age"].mode()[0])
 #Corroboramos que ya no tenemos nulos en Age
 df.Age.isnull().sum()
 
+#Vemos los datos nulos de Rotten Tomatoes
+df["Rotten Tomatoes"].isnull().sum()
+"Como son 7 solo lo imprimimos para determinar que hacer con los mismos"
+df[df["Rotten Tomatoes"].isnull()]
+#Los elimino porque no son relevantes
+df.dropna(inplace=True)
+
+#Hasta ahora vizualisamos y limpiamos de los datos nullos!
+
+#Procedo a categorizar todos los datos a numericos
+df["Age"] = df["Age"].str.replace('+','')
+df["Rotten Tomatoes"] = df["Rotten Tomatoes"].str.replace('/','').str.replace('100','')
 
 
 #No usar
