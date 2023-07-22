@@ -61,6 +61,19 @@ df.dropna(inplace=True)
 df["Age"] = df["Age"].str.replace('+','')
 df["Rotten Tomatoes"] = df["Rotten Tomatoes"].str.replace('/','').str.replace('100','')
 
+#Voy a copiar el df actual para despues usarlo en el paso de ML
+df_ml = df.copy()
+
+
+#Juntamos las 4 columnas de Netflix, Hulu, Disney+, Prime Video
+df["Platform"] = df.apply(lambda row:", ".join(df.columns[row == 1]), axis=1)
+
+#Eliminacion de las 4 columnas
+df.drop(columns = ['Netflix','Disney+','Hulu','Prime Video'], inplace = True)
+
+#Verificamos
+df
+
 
 #No usar
 """ #Determinamos las variables numericas mediantes estadisticas
