@@ -57,15 +57,20 @@ df.dropna(inplace=True)
 
 #Hasta ahora vizualisamos y limpiamos de los datos nullos!
 
-#Procedo a categorizar todos los datos a numericos
+#Categorizar todos los datos a numericos
 df["Age"] = df["Age"].str.replace('+','')
 df["Rotten Tomatoes"] = df["Rotten Tomatoes"].str.replace('/','').str.replace('100','')
 
-#Voy a copiar el df actual para despues usarlo en el paso de ML
+#Cambiamos el tipo de dato de Rotten Tomatoes
+df["Rotten Tomatoes"] = df["Rotten Tomatoes"].astype(np.int64)
+
+#Cambiando nombres de las columnas
+df.rename(columns={"Age":"Minimumn Age","Year":"Premiere"}, inplace=True)
+
+#Creacion de df_ml
 df_ml = df.copy()
 
-
-#Juntamos las 4 columnas de Netflix, Hulu, Disney+, Prime Video
+#Unificacion de las 4 columnas: Netflix, Hulu, Disney+, Prime Video
 df["Platform"] = df.apply(lambda row:", ".join(df.columns[row == 1]), axis=1)
 
 #Eliminacion de las 4 columnas
@@ -74,8 +79,9 @@ df.drop(columns = ['Netflix','Disney+','Hulu','Prime Video'], inplace = True)
 #Verificamos
 df
 
-#Cambiamos el tipo de dato de Rotten Tomatoes
-df["Rotten Tomatoes"] = df["Rotten Tomatoes"].astype(np.int64)
+#Ordenamos por Premiere
+df = df.sort_values(by="Premiere")
+
 
 
 
