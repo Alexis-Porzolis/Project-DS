@@ -22,7 +22,7 @@ null_counts = df.isnull().sum()
 #Vizualisamos los datos nulos
 plt.figure(figsize=(12,8))
 ax = null_counts.plot(kind="bar", color= "skyblue", edgecolor="black")
-# Agregar etiquetas y valores en cada barra
+#Agregar etiquetas y valores en cada barra
 for p in ax.patches:
     ax.annotate(str(p.get_height()), (p.get_x() + p.get_width() / 2., p.get_height()),
                 ha='center', va='center', xytext=(0, 5), textcoords='offset points')
@@ -42,7 +42,7 @@ nullpercentage(df["Rotten Tomatoes"])
 #Priorizamos la optimizacion de Age
 df.Age.unique()
 df.Age.describe()
-df["Age"].mode()[0]
+df.Age.mode()[0]
 
 #Reemplazamos los datos nullos por la promedio de la moda
 df["Age"] = df["Age"].fillna(df["Age"].mode()[0])
@@ -57,6 +57,7 @@ df[df["Rotten Tomatoes"].isnull()]
 df.dropna(inplace=True)
 
 #Hasta ahora vizualisamos y limpiamos de los datos nullos!
+
 
 #Categorizar todos los datos a numericos
 df["Age"] = df["Age"].str.replace('+','')
