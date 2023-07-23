@@ -1,8 +1,9 @@
 # Project-DS
-Dentro de este projecto uso las herramientas basicas para una optimizacion de una data frame a partir de una archivo csv
 
-1.Limpieza de los datos
+Within this project I use the basic tools for an optimization of a data frame from a csv file
 
-2.Optimizacion de los datos
+1.Data cleansing
 
-3.Vizualisacion de los datos
+2.Optimization of the data
+
+3. Visualization of the data
