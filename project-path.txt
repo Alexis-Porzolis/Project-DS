@@ -1,52 +1,52 @@
 
-Paso 1: Obtención de Datos
+Step 1: Data Collection
 
-Para iniciar mi proyecto, lo primero que debo hacer es obtener un conjunto de datos de películas. Buscaré en sitios web como IMDb
-o Kaggle para encontrar conjuntos de datos que incluyan información sobre el título de la película, género, calificación, año de lanzamiento, 
-recaudación en taquilla, y otros detalles relevantes.
+To start my project, the first thing I need to do is get a movie dataset. I'll search websites like IMDb
+or Kaggle to find data sets that include information about the movie title, genre, rating, release year,
+box office receipts, and other relevant details.
 
-Paso 2: Preparación y Limpieza de Datos
+Step 2: Data Preparation and Cleaning
 
-Una vez que haya conseguido el conjunto de datos, utilizaré la biblioteca Pandas para cargarlo en un DataFrame. Con esto, podré realizar una
-exploración inicial de los datos y familiarizarme con su estructura y contenido.
-En esta etapa, me aseguraré de limpiar los datos adecuadamente. 
-Trataré los valores faltantes y eliminaré cualquier duplicado que pueda afectar el análisis y los resultados.
+Once you have obtained the dataset, use the Pandas library to load it into a DataFrame. With this, I will be able to make a
+initial exploration of the data and become familiar with its structure and content.
+At this stage, I'll make sure to clean up the data properly.
+I will address missing values and remove any duplicates that may affect analysis and results.
 
-Paso 3: Análisis Exploratorio de Datos
+Step 3: Exploratory Data Analysis
 
-Con los datos limpios y preparados, utilizaré Pandas y Matplotlib para llevar a cabo el análisis exploratorio. 
-Contaré la cantidad de películas en cada género para obtener una visión general de las distribuciones. 
-Además, calcularé estadísticas de calificación para entender mejor el rango y la dispersión de las puntuaciones. 
-También, exploraré las tendencias a lo largo del tiempo, analizando cómo han evolucionado las películas según el año de lanzamiento.
+With the data cleaned and prepared, I will use Pandas and Matplotlib to carry out the exploratory analysis.
+I'll count the number of movies in each genre to get an overview of distributions.
+In addition, I will calculate qualification statistics to better understand the range and dispersion of pressures.
+Also, I'll explore trends over time, looking at how movies have evolved by year of release.
 
-Paso 4: Visualización de Datos
+Step 4: Data Visualization
 
-Aprovecharé la biblioteca Matplotlib para crear gráficos atractivos que muestren los resultados del análisis exploratorio. 
-Por ejemplo, crearé un gráfico de barras para presentar la cantidad de películas por género, 
-un gráfico de líneas para seguir la evolución de las calificaciones a lo largo de los años, y un diagrama de dispersión 
-para visualizar la posible relación entre la calificación y la recaudación en taquilla.
+I'll take advantage of the Matplotlib library to create attractive plots showing the results of the exploratory analysis.
+For example, create a bar chart to present the number of movies by genre,
+a line graph to follow the evolution of the lesions over the years, and a scatter plot
+to visualize the possible relationship between rating and box office collection.
 
-Paso 5: Modelado Predictivo (opcional)
+Step 5: Predictive Modeling (optional)
 
-Si decido llevar el proyecto a un nivel más avanzado, utilizaré la biblioteca Scikit-learn para construir un modelo de regresión que me 
-permita predecir la recaudación en taquilla de películas basándome en otras características. Sin embargo, esta etapa es opcional y puedo 
-omitirla si prefiero mantener el proyecto más básico.
+If I decide to take the project to a more advanced level, I will use the Scikit-learn library to build a regression model that will
+Allow to predict movie box office taking based on other characteristics. However, this stage is optional and I can
+skip it if you prefer to keep the most basic project.
 
-Paso 6: Visualización Interactiva con Tableau
+Step 6: Interactive visualization with Tableau
 
-Una vez que haya realizado las visualizaciones estáticas con Matplotlib, llevaré mis resultados a un nivel más interactivo utilizando Tableau. 
-Importaré los datos limpios en Tableau y crearé paneles interactivos que permitan a los usuarios explorar la información de manera dinámica. 
-Esto enriquecerá la experiencia del usuario y facilitará la identificación de patrones y tendencias en los datos.
+Once I've made the visualizations static with Matplotlib, I'll take my results to a more interactive level using Tableau.
+I will import the clean data into Tableau and create interactive dashboards that allow users to explore the information dynamically.
+This will enrich the user experience and make it easier to identify patterns and trends in the data.
 
-Paso 7: Informe y Presentación
+Step 7: Report and Presentation
 
-El último paso será crear un informe que resuma mis hallazgos y destaque las visualizaciones más interesantes. 
-Prepararé una presentación para compartir mis resultados con otros y explicar mis descubrimientos clave. 
-Me aseguraré de utilizar el poder de Pandas, NumPy y Matplotlib para realizar análisis y visualizaciones efectivas de los datos, 
-y utilizaré Tableau para crear visualizaciones interactivas y atractivas que resalten los hallazgos de mi proyecto.
+The last step will be to create a report that summarizes my results and highlights the most interesting visualizations.
+I will prepare a presentation to share my results with others and explain my key findings.
+I will make sure to use the power of Pandas, NumPy and Matplotlib to do effective analysis and visualization of the data,
+and I will use Tableau to create engaging and interactive visualizations that highlight the results of my project.
 
 
 
 ----------------------------------------------------------------------------------------------------------------------------------------------
-En este proyecto, pondré especial atención al detalle en cada paso, interpretaré los datos correctamente y presentaré los resultados de manera clara y efectiva. 
-¡Espero que este proyecto de Análisis y Visualización de Datos de Películas sea exitoso y enriquecedor!
+In this project, I will pay close attention to detail at each step, interpret the data correctly, and present the results clearly and effectively.
+I hope this Film Data Analysis and Visualization project is successful and enriching!
