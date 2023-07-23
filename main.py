@@ -1,6 +1,7 @@
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt 
+import seaborn as sns
 from os import system as sys
 
 sys('cls')
@@ -73,6 +74,11 @@ df_ml = df.copy()
 #Unificacion de las 4 columnas: Netflix, Hulu, Disney+, Prime Video
 df["Platform"] = df.apply(lambda row:", ".join(df.columns[row == 1]), axis=1)
 
+#Comprobacion de la nueva columna
+df["Platform"].unique()
+df["Platform"].value_counts()
+df["Platform"].describe()
+
 #Eliminacion de las 4 columnas
 df.drop(columns = ['Netflix','Disney+','Hulu','Prime Video'], inplace = True)
 
@@ -81,8 +87,6 @@ df
 
 #Ordenamos por Premiere
 df = df.sort_values(by="Premiere")
-
-
 
 
 #No usar
