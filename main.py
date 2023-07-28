@@ -89,6 +89,7 @@ df
 #Ordenamos por Premiere
 df = df.sort_values(by="Premiere")
 
+#Visualizacion de datos
 
 #No usar
 """ #Determinamos las variables numericas mediantes estadisticas
