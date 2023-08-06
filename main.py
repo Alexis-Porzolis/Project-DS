@@ -48,7 +48,7 @@ df.Age.unique()
 df.Age.describe()
 df.Age.mode()[0]
 
-# Reemplazamos los datos nullos por la promedio de la moda
+# Reemplazamos los datos nullos por la promedio de la modañ
 df["Age"] = df["Age"].fillna(df["Age"].mode()[0])
 # Corroboramos que ya no tenemos nulos en Age
 df.Age.isnull().sum()
